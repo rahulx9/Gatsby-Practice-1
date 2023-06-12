@@ -9,4 +9,9 @@
  */
 module.exports = {
   plugins: [],
-}
+  siteMetadata: {
+    title: "Gatsby Example",
+    description: "Static site generation with Gatsby",
+    copyright: "This website is copyright 2023 with Gastby example",
+  },
+};
