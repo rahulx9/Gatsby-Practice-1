@@ -9,6 +9,9 @@
  */
 module.exports = {
   plugins: [
+    `gatsby-transformer-remark`,
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -16,6 +19,13 @@ module.exports = {
         name: `projects`,
         // Path to the directory
         path: `${__dirname}/src/projects/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static/`,
       },
     },
   ],
